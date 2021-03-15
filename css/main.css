@@ -247,4 +247,136 @@ main .ProfileImgContainer img {
   border-radius: 50%;
   margin: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+  main .InfoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+main .InfoContainer .TitleContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem;
+  color: #c4c4c4;
+}
+
+main .InfoContainer .TitleContent h1 {
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  main .InfoContainer .TitleContent h1 {
+    font-size: 2rem;
+  }
+}
+
+main .InfoContainer .InfoContent {
+  background-color: #ededed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.8rem;
+  border-radius: 5px;
+  padding: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  main .InfoContainer .InfoContent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+main .InfoContainer .InfoContent div p {
+  margin-bottom: 1.2rem;
+}
+
+main .InfoContainer .InfoContent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  main .InfoContainer .InfoContent ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+}
+
+main .InfoContainer .InfoContent ul li {
+  width: 2.6 0.5rem;
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  main .InfoContainer .InfoContent ul li {
+    width: 3rem;
+  }
+}
+
+main .InfoContainer .InfoContent ul .Html {
+  color: #f3632c;
+}
+
+main .InfoContainer .InfoContent ul .Css {
+  color: #049be4;
+}
+
+main .InfoContainer .InfoContent ul .Js {
+  color: #f4dc1c;
+}
+
+main .InfoContainer .InfoContent ul .node {
+  color: #7dbd42;
+}
+
+main .InfoContainer .InfoContent ul .React {
+  color: #53c1de;
+}
+
+main .InfoContainer .InfoContent ul .Angular {
+  color: #dc0030;
+}
+
+main .InfoContainer .InfoContent ul .Git {
+  color: #f05033;
+}
 /*# sourceMappingURL=main.css.map */
