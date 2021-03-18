@@ -9,7 +9,7 @@ footer {
     margin-bottom: 0.5rem;
     color: $titleColor;
   }
-  .ContactBtns {
+  .SocialLinks {
     // border-top: 1px solid $accentColor;
     // border-bottom: 1px solid $accentColor;
     font-size: 3rem;
@@ -29,17 +29,21 @@ footer {
       -webkit-transition-property: box-shadow, transform;
       transition-property: box-shadow, transform;
     }
-    .LinkedIn:hover {
-      color: #006699;
+    .Mail:hover,
+    .LinkedIn:hover,
+    .Github:hover {
       box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
+    .Mail:hover {
+      color: green;
+    }
+    .LinkedIn:hover {
+      color: #006699;
+    }
     .Github:hover {
       color: white;
-      box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
     }
   }
 }

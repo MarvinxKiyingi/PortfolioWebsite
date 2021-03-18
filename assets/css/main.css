@@ -224,7 +224,7 @@ footer h4 {
   color: #c4c4c4;
 }
 
-footer .ContactBtns {
+footer .SocialLinks {
   font-size: 3rem;
   width: 15rem;
   display: -webkit-box;
@@ -235,7 +235,7 @@ footer .ContactBtns {
           justify-content: space-evenly;
 }
 
-footer .ContactBtns span {
+footer .SocialLinks span {
   color: #c4c4c4;
   padding: 5px;
   display: inline-block;
@@ -253,20 +253,25 @@ footer .ContactBtns span {
   transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
 
-footer .ContactBtns .LinkedIn:hover {
-  color: #006699;
+footer .SocialLinks .Mail:hover,
+footer .SocialLinks .LinkedIn:hover,
+footer .SocialLinks .Github:hover {
   -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-footer .ContactBtns .Github:hover {
+footer .SocialLinks .Mail:hover {
+  color: green;
+}
+
+footer .SocialLinks .LinkedIn:hover {
+  color: #006699;
+}
+
+footer .SocialLinks .Github:hover {
   color: white;
-  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
 }
 
 main {
