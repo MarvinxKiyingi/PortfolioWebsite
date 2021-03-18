@@ -1,0 +1,412 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #3f4e4f;
+}
+
+header nav {
+  background: #3f4e4f;
+  width: 95%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid white;
+}
+
+header nav .LogoLink {
+  text-decoration: none;
+}
+
+header nav .Logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 1.6rem;
+}
+
+header nav .Logo .FirstName {
+  padding-right: 5px;
+  font-weight: 700;
+}
+
+header nav .Menu {
+  display: none;
+}
+
+header nav .Menu li {
+  list-style: none;
+  color: white;
+}
+
+header nav .Menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav .Menu li a {
+    color: white;
+  }
+}
+
+header nav .Menu li a:hover {
+  color: black;
+}
+
+header nav .Menu li a:active {
+  color: #3f4e4f;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav .Menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 17rem;
+    font-size: 1.3rem;
+  }
+}
+
+header nav .Menu.show {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  top: 3rem;
+  right: 0;
+  margin-right: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+header nav .Menu.show li {
+  width: 100%;
+}
+
+header nav .Menu.show a:active {
+  border-bottom: 2px solid;
+}
+
+header nav .BurgerMenuBtn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav .BurgerMenuBtn {
+    display: none;
+  }
+}
+
+header nav .BurgerMenuBtn .BurgerLayer {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav .BurgerMenuBtn .BurgerLayer div {
+  display: block;
+  width: 40px;
+  height: 3px;
+  position: relative;
+  background-color: #ffffff;
+  -webkit-transition: background-color 0.35s 0s ease-out;
+  transition: background-color 0.35s 0s ease-out;
+}
+
+header nav .BurgerMenuBtn .BurgerLayer ::before,
+header nav .BurgerMenuBtn .BurgerLayer ::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  -webkit-transition: top 0.2s 0.4s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: top 0.2s 0.4s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  transition: top 0.2s 0.4s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, transform 0.2s ease-out;
+  transition: top 0.2s 0.4s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+header nav .BurgerMenuBtn .BurgerLayer ::before {
+  top: 12px;
+  left: 20px;
+}
+
+header nav .BurgerMenuBtn .BurgerLayer ::after {
+  top: -12px;
+  right: 20px;
+}
+
+header nav .animate .BurgerLayer div {
+  background-color: transparent;
+}
+
+header nav .animate .BurgerLayer div::before,
+header nav .animate .BurgerLayer div::after {
+  top: 0;
+  width: 40px;
+  -webkit-transition: top 0.2s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, -webkit-transform 0.2s 0.4s ease-out;
+  transition: top 0.2s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, -webkit-transform 0.2s 0.4s ease-out;
+  transition: top 0.2s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, transform 0.2s 0.4s ease-out;
+  transition: top 0.2s ease-out, left 0.2s 0.2s ease-out, right 0.2s 0.2s ease-out, width 0.2s 0.2s ease-out, transform 0.2s 0.4s ease-out, -webkit-transform 0.2s 0.4s ease-out;
+}
+
+header nav .animate .BurgerLayer div::before {
+  left: 0;
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+          transform: rotate3d(0, 0, 1, 45deg);
+}
+
+header nav .animate .BurgerLayer div::after {
+  right: 0;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+          transform: rotate3d(0, 0, 1, -45deg);
+}
+
+footer {
+  background-color: #3f4e4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+footer h4 {
+  margin-bottom: 0.5rem;
+  color: #c4c4c4;
+}
+
+footer .SocialLinks {
+  font-size: 3rem;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .SocialLinks span {
+  color: #c4c4c4;
+  padding: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(243, 234, 234, 0);
+          box-shadow: 0 0 1px rgba(243, 234, 234, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+}
+
+footer .SocialLinks .Mail:hover,
+footer .SocialLinks .LinkedIn:hover,
+footer .SocialLinks .Github:hover {
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+footer .SocialLinks .Mail:hover {
+  color: green;
+}
+
+footer .SocialLinks .LinkedIn:hover {
+  color: #006699;
+}
+
+footer .SocialLinks .Github:hover {
+  color: white;
+}
+
+main {
+  background-color: #3f4e4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  main .mainContent {
+    width: 90rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+main .ProfileImgContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .ProfileImgContainer img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+main .InfoContainer .TitleContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem;
+  color: #c4c4c4;
+}
+
+main .InfoContainer .TitleContent h1 {
+  font-size: 2.2rem;
+}
+
+main .InfoContainer .InfoContent {
+  background-color: #ededed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.8rem;
+  border-radius: 5px;
+  padding: 0.8rem;
+}
+
+main .InfoContainer .InfoContent .AboutMe p {
+  margin-bottom: 1.2rem;
+}
+
+main .InfoContainer .InfoContent .AboutMe p ::hover {
+  color: red;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon span {
+  width: 2.6 0.5rem;
+  font-size: 1.5rem;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon .Html {
+  color: #f3632c;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon .Css {
+  color: #049be4;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon .Js {
+  color: #f4dc1c;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon .node {
+  color: #7dbd42;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon .React {
+  color: #53c1de;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon .Angular {
+  color: #dc0030;
+}
+
+main .InfoContainer .InfoContent .LanguageIcon .Git {
+  color: #f05033;
+}
+
+*,
+body,
+div,
+h1 {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
