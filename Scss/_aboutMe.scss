@@ -10,7 +10,7 @@ main {
     width: 95%;
     display: flex;
     flex-direction: column;
-    @include horizontalTablet {
+    @include desktop {
       flex-direction: row;
     }
     .ProfileImgContainer {
@@ -32,13 +32,19 @@ main {
         padding: 0.5rem;
         color: $titleColor;
         h1 {
-          font-size: $mobileTitleSize;
+          font-size: $XSMobileTitleSize;
+          @include mobile {
+            font-size: $mobileTitleSize;
+          }
           @include verticalTablet {
             font-size: $tabletTitleSize;
           }
         }
         p {
-          font-size: $mobileSmallerTitleSize;
+          font-size: $XSMobileSmallerTitleSize;
+          @include mobile {
+            font-size: $mobileSmallerTitleSize;
+          }
           @include verticalTablet {
             font-size: $tabletSmallerTitleSize;
           }

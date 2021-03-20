@@ -110,6 +110,14 @@ header nav .Menu.show {
   padding: 0.5rem;
 }
 
+@media screen and (min-width: 768px) {
+  header nav .Menu.show {
+    width: 9rem;
+    height: 9rem;
+    font-size: 1.3rem;
+  }
+}
+
 header nav .Menu.show li {
   width: 100%;
 }
@@ -347,7 +355,13 @@ main .MainConatiner .InfoContainer .TitleContent {
 }
 
 main .MainConatiner .InfoContainer .TitleContent h1 {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 375px) {
+  main .MainConatiner .InfoContainer .TitleContent h1 {
+    font-size: 2.2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -357,7 +371,13 @@ main .MainConatiner .InfoContainer .TitleContent h1 {
 }
 
 main .MainConatiner .InfoContainer .TitleContent p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+  main .MainConatiner .InfoContainer .TitleContent p {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
