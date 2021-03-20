@@ -1,13 +1,28 @@
 // FONT STYLE
-// @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&display=swap');
-// $mainFontFmaily: 'Blinker', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 $mainFontFmaily: 'Nunito', sans-serif;
 
 // FONT SIZE
+// Smaller mobiles
+$XSMobileTitleSize: 1.6rem;
+$XSMobileSmallerTitleSize: 1rem;
+
+//Mobile
 $mobileTitleSize: 2.2rem;
-$mobileSmallerTitleSize: 1rem;
+$mobileSmallerTitleSize: 1.2rem;
 $mobileTextSize: 1rem;
+//Tablet
+$tabletTitleSize: 3.5rem;
+$tabletSmallerTitleSize: 1.5rem;
+$tabletTextSize: 1.5rem;
 
 // EXPERIANCE ICON SIZE
+//Mobile
 $mobileLanguageIconSize: 1.5rem;
+
+//Tablet
+$tabletLanguageIconSize: 2.2rem;
+
+// SOCIAL LINKS
+//Tablet
+$tabletSocialsSize: 2.5rem;

@@ -1,82 +1,108 @@
 @import '_mixins/responsiveScreenSize';
 @import '_mixins/colors';
 @import '_mixins/typography';
+
 main {
-  .mainContent {
-    @include horizontalTablet {
-      width: 90rem;
-    }
-  }
+  justify-content: center;
   background-color: $mainColor;
   display: flex;
-  flex-direction: column;
-  @include horizontalTablet {
-    flex-direction: row;
-  }
-  .ProfileImgContainer {
-    width: 100%;
+  .MainConatiner {
+    width: 95%;
     display: flex;
-    justify-content: center;
-    img {
-      max-width: 50%;
-      height: auto;
-      border-radius: 50%;
-      margin: 1rem;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
     }
-  }
-  .InfoContainer {
-    .TitleContent {
+    .ProfileImgContainer {
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0.5rem;
-      color: $titleColor;
-      h1 {
-        font-size: $mobileTitleSize;
-      }
-      p {
-        font-size: $mobileSmallerTitleSize;
+      justify-content: center;
+      img {
+        max-width: 50%;
+        height: auto;
+        border-radius: 50%;
+        margin: 1rem;
       }
     }
-    .InfoContent {
-      background-color: $accentColor;
-      display: flex;
-      flex-direction: column;
-      margin: 0.8rem;
-      border-radius: 5px;
-      padding: 0.8rem;
-      .AboutMe {
-        p {
-          margin-bottom: 1rem;
-          font-size: $mobileTextSize;
-        }
-      }
-      .LanguageIcon {
+    .InfoContainer {
+      .TitleContent {
         display: flex;
-        justify-content: space-between;
-        span {
-          font-size: $mobileLanguageIconSize;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        color: $titleColor;
+        h1 {
+          font-size: $XSMobileTitleSize;
+          @include mobile {
+            font-size: $mobileTitleSize;
+          }
+          @include verticalTablet {
+            font-size: $tabletTitleSize;
+          }
         }
-        .Html {
-          color: #f3632c;
+        p {
+          font-size: $XSMobileSmallerTitleSize;
+          @include mobile {
+            font-size: $mobileSmallerTitleSize;
+          }
+          @include verticalTablet {
+            font-size: $tabletSmallerTitleSize;
+          }
         }
-        .Css {
-          color: #049be4;
+      }
+      .InfoContent {
+        background-color: $accentColor;
+        display: flex;
+        flex-direction: column;
+        margin: 0.8rem;
+        border-radius: 5px;
+        padding: 0.8rem;
+        @include verticalTablet {
+          padding: 1rem;
         }
-        .Js {
-          color: #f4dc1c;
+        .AboutMe {
+          p {
+            margin-bottom: 1rem;
+            font-size: $mobileTextSize;
+            @include verticalTablet {
+              font-size: $tabletTextSize;
+            }
+          }
         }
-        .node {
-          color: #7dbd42;
-        }
-        .React {
-          color: #53c1de;
-        }
-        .Angular {
-          color: #dc0030;
-        }
-        .Git {
-          color: #f05033;
+        .LanguageIcon {
+          display: flex;
+          justify-content: space-between;
+          span {
+            display: flex;
+            justify-content: center;
+            width: 45px;
+            height: auto;
+            font-size: $mobileLanguageIconSize;
+            @include verticalTablet {
+              font-size: $tabletLanguageIconSize;
+            }
+          }
+          .Html {
+            color: #f3632c;
+          }
+          .Css {
+            color: #049be4;
+          }
+          .Js {
+            color: #f4dc1c;
+          }
+          .node {
+            color: #7dbd42;
+          }
+          .React {
+            color: #53c1de;
+          }
+          .Angular {
+            color: #dc0030;
+          }
+          .Git {
+            color: #f05033;
+          }
         }
       }
     }
