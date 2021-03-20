@@ -220,7 +220,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 footer h4 {
@@ -229,7 +229,7 @@ footer h4 {
 }
 
 footer .SocialLinks {
-  font-size: 3rem;
+  font-size: 2rem;
   width: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +237,12 @@ footer .SocialLinks {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+  footer .SocialLinks {
+    font-size: 2.5rem;
+  }
 }
 
 footer .SocialLinks span {
@@ -279,7 +285,17 @@ footer .SocialLinks .Github:hover {
 }
 
 main {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #3f4e4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .MainConatiner {
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,13 +306,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  main .mainContent {
-    width: 90rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  main {
+  main .MainConatiner {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -304,7 +314,7 @@ main {
   }
 }
 
-main .ProfileImgContainer {
+main .MainConatiner .ProfileImgContainer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,14 +324,14 @@ main .ProfileImgContainer {
           justify-content: center;
 }
 
-main .ProfileImgContainer img {
+main .MainConatiner .ProfileImgContainer img {
   max-width: 50%;
   height: auto;
   border-radius: 50%;
   margin: 1rem;
 }
 
-main .InfoContainer .TitleContent {
+main .MainConatiner .InfoContainer .TitleContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,15 +346,27 @@ main .InfoContainer .TitleContent {
   color: #c4c4c4;
 }
 
-main .InfoContainer .TitleContent h1 {
+main .MainConatiner .InfoContainer .TitleContent h1 {
   font-size: 2.2rem;
 }
 
-main .InfoContainer .TitleContent p {
-  font-size: 1rem;
+@media screen and (min-width: 768px) {
+  main .MainConatiner .InfoContainer .TitleContent h1 {
+    font-size: 3.5rem;
+  }
 }
 
-main .InfoContainer .InfoContent {
+main .MainConatiner .InfoContainer .TitleContent p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  main .MainConatiner .InfoContainer .TitleContent p {
+    font-size: 1.5rem;
+  }
+}
+
+main .MainConatiner .InfoContainer .InfoContent {
   background-color: #ededed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,12 +380,24 @@ main .InfoContainer .InfoContent {
   padding: 0.8rem;
 }
 
-main .InfoContainer .InfoContent .AboutMe p {
+@media screen and (min-width: 768px) {
+  main .MainConatiner .InfoContainer .InfoContent {
+    padding: 1rem;
+  }
+}
+
+main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon {
+@media screen and (min-width: 768px) {
+  main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
+    font-size: 1.5rem;
+  }
+}
+
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,35 +406,49 @@ main .InfoContainer .InfoContent .LanguageIcon {
           justify-content: space-between;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon span {
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: auto;
   font-size: 1.5rem;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon .Html {
+@media screen and (min-width: 768px) {
+  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
+    font-size: 2.2rem;
+  }
+}
+
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Html {
   color: #f3632c;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon .Css {
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Css {
   color: #049be4;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon .Js {
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Js {
   color: #f4dc1c;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon .node {
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .node {
   color: #7dbd42;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon .React {
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .React {
   color: #53c1de;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon .Angular {
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Angular {
   color: #dc0030;
 }
 
-main .InfoContainer .InfoContent .LanguageIcon .Git {
+main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Git {
   color: #f05033;
 }
 

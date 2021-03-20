@@ -7,18 +7,19 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1.2rem;
   h4 {
     margin-bottom: 0.5rem;
     color: $titleColor;
   }
   .SocialLinks {
-    // border-top: 1px solid $accentColor;
-    // border-bottom: 1px solid $accentColor;
-    font-size: 3rem;
+    font-size: 2rem;
     width: 15rem;
     display: flex;
     justify-content: space-evenly;
+    @include verticalTablet {
+      font-size: $tabletSocialsSize;
+    }
     span {
       color: $titleColor;
       padding: 5px;
