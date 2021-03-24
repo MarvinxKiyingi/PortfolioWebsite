@@ -10,7 +10,7 @@ main {
     width: 95%;
     display: flex;
     flex-direction: column;
-    @include laptop {
+    @include desktop {
       flex-direction: row;
     }
     .ProfileImgContainer {
@@ -18,31 +18,31 @@ main {
       height: auto;
       display: flex;
       justify-content: center;
-      .ProfileImgContent {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          max-width: 60%;
-          height: auto;
-          border-radius: 50%;
-          margin: 1rem;
-          // @include laptop {
-          //   max-width: 90%;
-          // }
+      align-items: center;
+      @include desktop {
+        width: 60%;
+        padding: 1.5rem;
+      }
+      @include desktopLarge {
+        width: 60%;
+      }
+      img {
+        width: 70%;
+        border-radius: 50%;
+        margin: 1rem;
+        @include verticalTablet {
+          width: 50%;
+        }
+        @include desktop {
+          width: 100%;
         }
       }
     }
-    .ProfileImgContainer {
-      @include laptop {
-        width: 80%;
-      }
-    }
     .InfoContainer {
-      @include laptop {
+      @include desktop {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
       }
       .TitleContent {
         display: flex;
@@ -58,8 +58,11 @@ main {
           @include verticalTablet {
             font-size: $tabletTitleSize;
           }
-          @include laptop {
-            font-size: $laptopTitleSize;
+          @include desktop {
+            font-size: $desktopTitleSize;
+          }
+          @include desktopLarge {
+            font-size: $desktopXLTitleSize;
           }
         }
         p {
@@ -70,8 +73,11 @@ main {
           @include verticalTablet {
             font-size: $tabletSmallerTitleSize;
           }
-          @include laptop {
-            font-size: $laptopSmallerTitleSize;
+          @include desktop {
+            font-size: $desktopSmallerTitleSize;
+          }
+          @include desktopLarge {
+            font-size: $desktopXLSmallerTitleSize;
           }
         }
       }
@@ -85,7 +91,7 @@ main {
         @include verticalTablet {
           padding: 2rem;
         }
-        @include laptop {
+        @include desktop {
           flex-direction: row;
         }
         .AboutMe {
@@ -96,18 +102,24 @@ main {
             @include verticalTablet {
               font-size: $tabletTextSize;
             }
-            @include laptop {
-              font-size: $laptopTextSize;
+            @include desktop {
+              font-size: $desktopTextSize;
+            }
+            @include desktopLarge {
+              font-size: $desktopXLTextSize;
             }
           }
         }
         .LanguageIcon {
           display: flex;
           justify-content: space-between;
-          @include laptop {
+          @include desktop {
             flex-wrap: wrap;
             align-items: center;
-            max-width: 7rem;
+            width: 15rem;
+          }
+          @include desktopLarge {
+            width: 13rem;
           }
           span {
             display: flex;
@@ -118,8 +130,11 @@ main {
             @include verticalTablet {
               font-size: $tabletLanguageIconSize;
             }
-            @include laptop {
-              font-size: $laptopLanguageIconSize;
+            @include desktop {
+              font-size: $desktopLanguageIconSize;
+            }
+            @include desktopLarge {
+              font-size: $desktopXLLanguageIconSize;
             }
           }
           .Html {

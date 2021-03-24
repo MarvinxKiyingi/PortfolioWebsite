@@ -83,8 +83,8 @@ header nav .Menu li a:active {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 17rem;
-    font-size: 1.3rem;
+    width: 24rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -253,6 +253,13 @@ footer .SocialLinks {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  footer .SocialLinks {
+    font-size: 2.7rem;
+    width: 25rem;
+  }
+}
+
 footer .SocialLinks span {
   color: #c4c4c4;
   padding: 5px;
@@ -331,30 +338,39 @@ main .MainConatiner .ProfileImgContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-main .MainConatiner .ProfileImgContainer .ProfileImgContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-main .MainConatiner .ProfileImgContainer .ProfileImgContent img {
-  max-width: 60%;
-  height: auto;
+@media screen and (min-width: 1024px) {
+  main .MainConatiner .ProfileImgContainer {
+    width: 60%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .MainConatiner .ProfileImgContainer {
+    width: 60%;
+  }
+}
+
+main .MainConatiner .ProfileImgContainer img {
+  width: 70%;
   border-radius: 50%;
   margin: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  main .MainConatiner .ProfileImgContainer img {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .ProfileImgContainer {
-    width: 80%;
+  main .MainConatiner .ProfileImgContainer img {
+    width: 100%;
   }
 }
 
@@ -367,9 +383,9 @@ main .MainConatiner .ProfileImgContainer .ProfileImgContent img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -400,13 +416,19 @@ main .MainConatiner .InfoContainer .TitleContent h1 {
 
 @media screen and (min-width: 768px) {
   main .MainConatiner .InfoContainer .TitleContent h1 {
-    font-size: 3.7rem;
+    font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main .MainConatiner .InfoContainer .TitleContent h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .MainConatiner .InfoContainer .TitleContent h1 {
+    font-size: 4.7rem;
   }
 }
 
@@ -422,13 +444,19 @@ main .MainConatiner .InfoContainer .TitleContent p {
 
 @media screen and (min-width: 768px) {
   main .MainConatiner .InfoContainer .TitleContent p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main .MainConatiner .InfoContainer .TitleContent p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .MainConatiner .InfoContainer .TitleContent p {
+    font-size: 1.6rem;
   }
 }
 
@@ -472,13 +500,19 @@ main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
 
 @media screen and (min-width: 768px) {
   main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
+    font-size: 1.4rem;
   }
 }
 
@@ -498,7 +532,13 @@ main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 7rem;
+    width: 15rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
+    width: 13rem;
   }
 }
 
@@ -516,13 +556,19 @@ main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
 
 @media screen and (min-width: 768px) {
   main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
+    font-size: 2.5rem;
   }
 }
 
