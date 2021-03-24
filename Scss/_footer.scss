@@ -20,6 +20,10 @@ footer {
     @include verticalTablet {
       font-size: $tabletSocialsSize;
     }
+    @include desktop {
+      font-size: $desktopSocialsSize;
+      width: 25rem;
+    }
     span {
       color: $titleColor;
       padding: 5px;
