@@ -35,7 +35,7 @@ header {
         a {
           text-decoration: none;
           color: black;
-          @include desktop {
+          @include laptop {
             color: $tetxColor;
           }
         }
@@ -47,7 +47,7 @@ header {
         }
       }
 
-      @include desktop {
+      @include laptop {
         display: flex;
         justify-content: space-between;
         width: 17rem;
@@ -85,7 +85,7 @@ header {
       border: none;
       outline: none;
       cursor: pointer;
-      @include desktop {
+      @include laptop {
         display: none;
       }
       .BurgerLayer {

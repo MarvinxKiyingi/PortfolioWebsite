@@ -324,6 +324,7 @@ main .MainConatiner {
 
 main .MainConatiner .ProfileImgContainer {
   width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,11 +333,44 @@ main .MainConatiner .ProfileImgContainer {
           justify-content: center;
 }
 
-main .MainConatiner .ProfileImgContainer img {
-  max-width: 50%;
+main .MainConatiner .ProfileImgContainer .ProfileImgContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .MainConatiner .ProfileImgContainer .ProfileImgContent img {
+  max-width: 60%;
   height: auto;
   border-radius: 50%;
   margin: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  main .MainConatiner .ProfileImgContainer {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .MainConatiner .InfoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 main .MainConatiner .InfoContainer .TitleContent {
@@ -366,7 +400,13 @@ main .MainConatiner .InfoContainer .TitleContent h1 {
 
 @media screen and (min-width: 768px) {
   main .MainConatiner .InfoContainer .TitleContent h1 {
-    font-size: 3.5rem;
+    font-size: 3.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .MainConatiner .InfoContainer .TitleContent h1 {
+    font-size: 3rem;
   }
 }
 
@@ -381,6 +421,12 @@ main .MainConatiner .InfoContainer .TitleContent p {
 }
 
 @media screen and (min-width: 768px) {
+  main .MainConatiner .InfoContainer .TitleContent p {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   main .MainConatiner .InfoContainer .TitleContent p {
     font-size: 1.5rem;
   }
@@ -402,8 +448,21 @@ main .MainConatiner .InfoContainer .InfoContent {
 
 @media screen and (min-width: 768px) {
   main .MainConatiner .InfoContainer .InfoContent {
-    padding: 1rem;
+    padding: 2rem;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  main .MainConatiner .InfoContainer .InfoContent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+main .MainConatiner .InfoContainer .InfoContent .AboutMe {
+  margin-right: 1rem;
 }
 
 main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
@@ -413,7 +472,13 @@ main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
 
 @media screen and (min-width: 768px) {
   main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
+    font-size: 1rem;
   }
 }
 
@@ -424,6 +489,17 @@ main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 7rem;
+  }
 }
 
 main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
@@ -441,6 +517,12 @@ main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
 @media screen and (min-width: 768px) {
   main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
     font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
+    font-size: 2.8rem;
   }
 }
 
