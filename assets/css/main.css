@@ -300,17 +300,15 @@ footer .SocialLinks .Github:hover {
 }
 
 main {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #3f4e4f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-main .MainConatiner {
+main section {
+  margin: 0px auto;
   width: 95%;
+}
+
+main .AboutWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,7 +319,7 @@ main .MainConatiner {
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner {
+  main .AboutWrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -329,7 +327,7 @@ main .MainConatiner {
   }
 }
 
-main .MainConatiner .ProfileImgContainer {
+main .AboutWrapper .ProfileImgContainer {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -344,38 +342,38 @@ main .MainConatiner .ProfileImgContainer {
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .ProfileImgContainer {
+  main .AboutWrapper .ProfileImgContainer {
     width: 60%;
     padding: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  main .MainConatiner .ProfileImgContainer {
+  main .AboutWrapper .ProfileImgContainer {
     width: 60%;
   }
 }
 
-main .MainConatiner .ProfileImgContainer img {
+main .AboutWrapper .ProfileImgContainer img {
   width: 70%;
   border-radius: 50%;
   margin: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  main .MainConatiner .ProfileImgContainer img {
+  main .AboutWrapper .ProfileImgContainer img {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .ProfileImgContainer img {
+  main .AboutWrapper .ProfileImgContainer img {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .InfoContainer {
+  main .AboutWrapper .InfoContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -389,7 +387,7 @@ main .MainConatiner .ProfileImgContainer img {
   }
 }
 
-main .MainConatiner .InfoContainer .TitleContent {
+main .AboutWrapper .InfoContainer .TitleContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,63 +402,63 @@ main .MainConatiner .InfoContainer .TitleContent {
   color: #c4c4c4;
 }
 
-main .MainConatiner .InfoContainer .TitleContent h1 {
+main .AboutWrapper .InfoContainer .TitleContent h1 {
   font-size: 1.6rem;
 }
 
 @media screen and (min-width: 375px) {
-  main .MainConatiner .InfoContainer .TitleContent h1 {
+  main .AboutWrapper .InfoContainer .TitleContent h1 {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  main .MainConatiner .InfoContainer .TitleContent h1 {
+  main .AboutWrapper .InfoContainer .TitleContent h1 {
     font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .InfoContainer .TitleContent h1 {
+  main .AboutWrapper .InfoContainer .TitleContent h1 {
     font-size: 3.5rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  main .MainConatiner .InfoContainer .TitleContent h1 {
+  main .AboutWrapper .InfoContainer .TitleContent h1 {
     font-size: 4.7rem;
   }
 }
 
-main .MainConatiner .InfoContainer .TitleContent p {
+main .AboutWrapper .InfoContainer .TitleContent p {
   font-size: 1rem;
 }
 
 @media screen and (min-width: 375px) {
-  main .MainConatiner .InfoContainer .TitleContent p {
+  main .AboutWrapper .InfoContainer .TitleContent p {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  main .MainConatiner .InfoContainer .TitleContent p {
+  main .AboutWrapper .InfoContainer .TitleContent p {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .InfoContainer .TitleContent p {
+  main .AboutWrapper .InfoContainer .TitleContent p {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  main .MainConatiner .InfoContainer .TitleContent p {
+  main .AboutWrapper .InfoContainer .TitleContent p {
     font-size: 1.6rem;
   }
 }
 
-main .MainConatiner .InfoContainer .InfoContent {
+main .AboutWrapper .InfoContainer .InfoContent {
   background-color: #ededed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,13 +473,13 @@ main .MainConatiner .InfoContainer .InfoContent {
 }
 
 @media screen and (min-width: 768px) {
-  main .MainConatiner .InfoContainer .InfoContent {
+  main .AboutWrapper .InfoContainer .InfoContent {
     padding: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .InfoContainer .InfoContent {
+  main .AboutWrapper .InfoContainer .InfoContent {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -489,34 +487,34 @@ main .MainConatiner .InfoContainer .InfoContent {
   }
 }
 
-main .MainConatiner .InfoContainer .InfoContent .AboutMe {
+main .AboutWrapper .InfoContainer .InfoContent .AboutMe {
   margin-right: 1rem;
 }
 
-main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
+main .AboutWrapper .InfoContainer .InfoContent .AboutMe p {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
+  main .AboutWrapper .InfoContainer .InfoContent .AboutMe p {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
+  main .AboutWrapper .InfoContainer .InfoContent .AboutMe p {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  main .MainConatiner .InfoContainer .InfoContent .AboutMe p {
+  main .AboutWrapper .InfoContainer .InfoContent .AboutMe p {
     font-size: 1.4rem;
   }
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,7 +524,7 @@ main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
+  main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
@@ -537,12 +535,12 @@ main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
 }
 
 @media screen and (min-width: 1440px) {
-  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon {
+  main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon {
     width: 13rem;
   }
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,48 +553,48 @@ main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
 }
 
 @media screen and (min-width: 768px) {
-  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
+  main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon span {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
+  main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon span {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  main .MainConatiner .InfoContainer .InfoContent .LanguageIcon span {
+  main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon span {
     font-size: 2.5rem;
   }
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Html {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Html {
   color: #f3632c;
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Css {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Css {
   color: #049be4;
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Js {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Js {
   color: #f4dc1c;
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .node {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .node {
   color: #7dbd42;
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .React {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .React {
   color: #53c1de;
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Angular {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Angular {
   color: #dc0030;
 }
 
-main .MainConatiner .InfoContainer .InfoContent .LanguageIcon .Git {
+main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Git {
   color: #f05033;
 }
 

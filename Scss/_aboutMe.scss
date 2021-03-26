@@ -3,11 +3,12 @@
 @import '_mixins/typography';
 
 main {
-  justify-content: center;
   background-color: $mainColor;
-  display: flex;
-  .MainConatiner {
+  section {
+    margin: 0px auto;
     width: 95%;
+  }
+  .AboutWrapper {
     display: flex;
     flex-direction: column;
     @include desktop {
