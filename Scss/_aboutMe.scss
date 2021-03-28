@@ -2,17 +2,18 @@
 @import '_mixins/colors';
 @import '_mixins/typography';
 
-main {
+.AboutWrapper {
   background-color: $mainColor;
-  section {
+  // display: flex;
+  // height: 50rem;
+  .AboutContainer {
     margin: 0px auto;
     width: 95%;
-  }
-  .AboutWrapper {
     display: flex;
     flex-direction: column;
     @include desktop {
       flex-direction: row;
+      padding: 3rem 0rem;
     }
     .ProfileImgContainer {
       width: 100%;
@@ -114,6 +115,7 @@ main {
           @include desktop {
             flex-wrap: wrap;
             align-items: center;
+            justify-content: space-around;
             flex: 0.5;
           }
           span {

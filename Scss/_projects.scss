@@ -1,0 +1,45 @@
+@import '_mixins/responsiveScreenSize';
+@import '_mixins/colors';
+@import '_mixins/typography';
+
+.ProjectsWrapper {
+  //   background-color: $aboutSectionColor;
+  background-color: $accentColor;
+  .ProjectsContainer {
+    margin: 0px auto;
+    width: 95%;
+    .ProjectsHeader {
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem 0rem;
+    }
+    .Projects {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      padding: 1.5rem 0rem;
+      h1 {
+        width: 70%;
+        text-align: center;
+        padding-bottom: 0.5rem;
+      }
+      .DesktopImg {
+        width: 70%;
+        border-radius: 5px;
+        padding: 1rem;
+        background-color: $mainColor;
+      }
+      .MobileImg {
+        width: 17%;
+        position: absolute;
+        top: 32%;
+        left: 74%;
+      }
+      p {
+        text-align: center;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@
 @import 'navBar';
 @import 'footer';
 @import 'aboutMe';
+@import 'projects';
 
 *,
 body,
@@ -11,6 +12,11 @@ h1 {
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 body {
   font-family: $mainFontFmaily;
+  // min-height: 100%;
+  // background-color: $mainColor;
 }
