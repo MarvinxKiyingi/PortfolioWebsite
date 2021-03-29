@@ -3,22 +3,32 @@
 @import '_mixins/typography';
 
 .ProjectsWrapper {
-  //   background-color: $aboutSectionColor;
   background-color: $accentColor;
+  .ProjectsHeader {
+    width: 95%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+  }
   .ProjectsContainer {
     margin: 0px auto;
     width: 95%;
-    .ProjectsHeader {
-      text-align: center;
-      font-size: 2rem;
-      padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
-    .Projects {
+    .Project {
       display: flex;
       align-items: center;
       flex-direction: column;
       position: relative;
       padding: 1.5rem 0rem;
+      @include desktop {
+        width: 50%;
+      }
       h1 {
         width: 70%;
         text-align: center;
@@ -27,14 +37,24 @@
       .DesktopImg {
         width: 70%;
         border-radius: 5px;
-        padding: 1rem;
+        padding: 0.5rem;
         background-color: $mainColor;
+        cursor: pointer;
+        @include desktop {
+          padding: 1rem;
+        }
       }
       .MobileImg {
         width: 17%;
         position: absolute;
-        top: 32%;
+        top: 34%;
         left: 74%;
+        @include desktop {
+          top: 35%;
+        }
+        @include desktopLarge {
+          top: 32%;
+        }
       }
       p {
         text-align: center;
