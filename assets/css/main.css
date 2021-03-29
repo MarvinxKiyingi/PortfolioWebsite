@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,6 +33,12 @@ header nav {
 
 header nav .LogoLink {
   text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    height: 4rem;
+  }
 }
 
 header nav .Logo {
@@ -299,16 +306,13 @@ footer .SocialLinks .Github:hover {
   color: white;
 }
 
-main {
+.AboutWrapper {
   background-color: #3f4e4f;
 }
 
-main section {
+.AboutWrapper .AboutContainer {
   margin: 0px auto;
   width: 95%;
-}
-
-main .AboutWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,15 +323,16 @@ main .AboutWrapper {
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper {
+  .AboutWrapper .AboutContainer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding: 3rem 0rem;
   }
 }
 
-main .AboutWrapper .ProfileImgContainer {
+.AboutWrapper .AboutContainer .ProfileImgContainer {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -342,7 +347,7 @@ main .AboutWrapper .ProfileImgContainer {
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .ProfileImgContainer {
+  .AboutWrapper .AboutContainer .ProfileImgContainer {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -351,26 +356,26 @@ main .AboutWrapper .ProfileImgContainer {
   }
 }
 
-main .AboutWrapper .ProfileImgContainer img {
+.AboutWrapper .AboutContainer .ProfileImgContainer img {
   width: 70%;
   border-radius: 50%;
   margin: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  main .AboutWrapper .ProfileImgContainer img {
+  .AboutWrapper .AboutContainer .ProfileImgContainer img {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .ProfileImgContainer img {
+  .AboutWrapper .AboutContainer .ProfileImgContainer img {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .InfoContainer {
+  .AboutWrapper .AboutContainer .InfoContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -387,7 +392,7 @@ main .AboutWrapper .ProfileImgContainer img {
   }
 }
 
-main .AboutWrapper .InfoContainer .TitleContent {
+.AboutWrapper .AboutContainer .InfoContainer .TitleContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,63 +407,63 @@ main .AboutWrapper .InfoContainer .TitleContent {
   color: #c4c4c4;
 }
 
-main .AboutWrapper .InfoContainer .TitleContent h1 {
+.AboutWrapper .AboutContainer .InfoContainer .TitleContent h1 {
   font-size: 1.6rem;
 }
 
 @media screen and (min-width: 375px) {
-  main .AboutWrapper .InfoContainer .TitleContent h1 {
+  .AboutWrapper .AboutContainer .InfoContainer .TitleContent h1 {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  main .AboutWrapper .InfoContainer .TitleContent h1 {
+  .AboutWrapper .AboutContainer .InfoContainer .TitleContent h1 {
     font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .InfoContainer .TitleContent h1 {
+  .AboutWrapper .AboutContainer .InfoContainer .TitleContent h1 {
     font-size: 3.8rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  main .AboutWrapper .InfoContainer .TitleContent h1 {
+  .AboutWrapper .AboutContainer .InfoContainer .TitleContent h1 {
     font-size: 5rem;
   }
 }
 
-main .AboutWrapper .InfoContainer .TitleContent p {
+.AboutWrapper .AboutContainer .InfoContainer .TitleContent p {
   font-size: 1rem;
 }
 
 @media screen and (min-width: 375px) {
-  main .AboutWrapper .InfoContainer .TitleContent p {
+  .AboutWrapper .AboutContainer .InfoContainer .TitleContent p {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  main .AboutWrapper .InfoContainer .TitleContent p {
+  .AboutWrapper .AboutContainer .InfoContainer .TitleContent p {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .InfoContainer .TitleContent p {
+  .AboutWrapper .AboutContainer .InfoContainer .TitleContent p {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  main .AboutWrapper .InfoContainer .TitleContent p {
+  .AboutWrapper .AboutContainer .InfoContainer .TitleContent p {
     font-size: 1.6rem;
   }
 }
 
-main .AboutWrapper .InfoContainer .InfoContent {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent {
   background-color: #ededed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,13 +478,13 @@ main .AboutWrapper .InfoContainer .InfoContent {
 }
 
 @media screen and (min-width: 768px) {
-  main .AboutWrapper .InfoContainer .InfoContent {
+  .AboutWrapper .AboutContainer .InfoContainer .InfoContent {
     padding: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .InfoContainer .InfoContent {
+  .AboutWrapper .AboutContainer .InfoContainer .InfoContent {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -487,31 +492,31 @@ main .AboutWrapper .InfoContainer .InfoContent {
   }
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .AboutMe {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .AboutMe {
   margin-right: 0.5rem;
   -webkit-box-flex: 1.3;
       -ms-flex: 1.3;
           flex: 1.3;
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .AboutMe p {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .AboutMe p {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  main .AboutWrapper .InfoContainer .InfoContent .AboutMe p {
+  .AboutWrapper .AboutContainer .InfoContainer .InfoContent .AboutMe p {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .InfoContainer .InfoContent .AboutMe p {
+  .AboutWrapper .AboutContainer .InfoContainer .InfoContent .AboutMe p {
     font-size: 1.5rem;
   }
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,19 +526,21 @@ main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon {
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon {
+  .AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-flex: 0.5;
         -ms-flex: 0.5;
             flex: 0.5;
   }
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon span {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,44 +553,144 @@ main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon span {
 }
 
 @media screen and (min-width: 768px) {
-  main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon span {
+  .AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon span {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon span {
+  .AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon span {
     margin: 0.5rem;
     font-size: 3rem;
   }
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Html {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon .Html {
   color: #f3632c;
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Css {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon .Css {
   color: #049be4;
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Js {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon .Js {
   color: #f4dc1c;
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .node {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon .node {
   color: #7dbd42;
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .React {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon .React {
   color: #53c1de;
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Angular {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon .Angular {
   color: #dc0030;
 }
 
-main .AboutWrapper .InfoContainer .InfoContent .LanguageIcon .Git {
+.AboutWrapper .AboutContainer .InfoContainer .InfoContent .LanguageIcon .Git {
   color: #f05033;
+}
+
+.ProjectsWrapper {
+  background-color: #ededed;
+}
+
+.ProjectsWrapper .ProjectsHeader {
+  width: 95%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 0rem;
+}
+
+.ProjectsWrapper .ProjectsContainer {
+  margin: 0px auto;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .ProjectsWrapper .ProjectsContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.ProjectsWrapper .ProjectsContainer .Project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 1.5rem 0rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .ProjectsWrapper .ProjectsContainer .Project {
+    width: 50%;
+  }
+}
+
+.ProjectsWrapper .ProjectsContainer .Project h1 {
+  width: 70%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.ProjectsWrapper .ProjectsContainer .Project .DesktopImg {
+  width: 70%;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #3f4e4f;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .ProjectsWrapper .ProjectsContainer .Project .DesktopImg {
+    padding: 1rem;
+  }
+}
+
+.ProjectsWrapper .ProjectsContainer .Project .MobileImg {
+  width: 17%;
+  position: absolute;
+  top: 34%;
+  left: 74%;
+}
+
+@media screen and (min-width: 1024px) {
+  .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
+    top: 35%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
+    top: 32%;
+  }
+}
+
+.ProjectsWrapper .ProjectsContainer .Project p {
+  text-align: center;
+  padding-top: 0.5rem;
 }
 
 *,
@@ -594,6 +701,11 @@ h1 {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {

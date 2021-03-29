@@ -18,6 +18,9 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid white;
+    @include desktop {
+      height: 4rem;
+    }
     .Logo {
       display: flex;
       color: $tetxColor;
