@@ -597,14 +597,6 @@ footer .SocialLinks .Github:hover {
   background-color: #ededed;
 }
 
-.ProjectsWrapper .ProjectsHeader {
-  width: 95%;
-  margin: 0px auto;
-  text-align: center;
-  font-size: 2rem;
-  padding: 1rem 0rem;
-}
-
 .ProjectsWrapper .ProjectsContainer {
   margin: 0px auto;
   width: 95%;
@@ -625,6 +617,27 @@ footer .SocialLinks .Github:hover {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+.ProjectsWrapper .ProjectsContainer .ProjectsHeader {
+  width: 95%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1rem 0rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .ProjectsWrapper .ProjectsContainer .ProjectsHeader {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ProjectsWrapper .ProjectsContainer .ProjectsHeader {
+    font-size: 3.8rem;
   }
 }
 
@@ -652,7 +665,20 @@ footer .SocialLinks .Github:hover {
 .ProjectsWrapper .ProjectsContainer .Project h1 {
   width: 70%;
   text-align: center;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .ProjectsWrapper .ProjectsContainer .Project h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ProjectsWrapper .ProjectsContainer .Project h1 {
+    font-size: 1.5rem;
+  }
 }
 
 .ProjectsWrapper .ProjectsContainer .Project .DesktopImg {
@@ -669,28 +695,36 @@ footer .SocialLinks .Github:hover {
   }
 }
 
+.ProjectsWrapper .ProjectsContainer .Project .DesktopImg:hover {
+  opacity: 0.3;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
   width: 17%;
   position: absolute;
-  top: 34%;
+  top: 28%;
   left: 74%;
 }
 
-@media screen and (min-width: 1024px) {
-  .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
-    top: 35%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
-    top: 32%;
-  }
-}
-
 .ProjectsWrapper .ProjectsContainer .Project p {
+  font-size: 1rem;
   text-align: center;
-  padding-top: 0.5rem;
+  padding: 1rem;
+  width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .ProjectsWrapper .ProjectsContainer .Project p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ProjectsWrapper .ProjectsContainer .Project p {
+    font-size: 1.5rem;
+  }
 }
 
 *,
