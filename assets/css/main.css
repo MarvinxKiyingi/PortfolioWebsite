@@ -681,6 +681,10 @@ footer .SocialLinks .Github:hover {
   }
 }
 
+.ProjectsWrapper .ProjectsContainer .Project .ViewSiteLink {
+  display: contents;
+}
+
 .ProjectsWrapper .ProjectsContainer .Project .DesktopImg {
   width: 70%;
   border-radius: 5px;
@@ -725,6 +729,17 @@ footer .SocialLinks .Github:hover {
   .ProjectsWrapper .ProjectsContainer .Project p {
     font-size: 1.5rem;
   }
+}
+
+.ProjectsWrapper .ProjectsContainer .Project .ViewRepoBtb {
+  padding: 0.2rem 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #3f4e4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 *,
