@@ -48,6 +48,9 @@
           font-size: $desktopSmallerTitleSize;
         }
       }
+      .ViewSiteLink {
+        display: contents;
+      }
       .DesktopImg {
         width: 70%;
         border-radius: 5px;
@@ -79,6 +82,14 @@
         @include desktop {
           font-size: $desktopTextSize;
         }
+      }
+      .ViewRepoBtb {
+        padding: 0.2rem 0.5rem;
+        background-color: white;
+        border-radius: 1rem;
+        text-decoration: none;
+        color: $mainColor;
+        display: flex;
       }
     }
   }
