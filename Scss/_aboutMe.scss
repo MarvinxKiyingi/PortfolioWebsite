@@ -4,16 +4,17 @@
 
 .AboutWrapper {
   background-color: $mainColor;
-  // display: flex;
-  // height: 50rem;
+  @include desktop {
+    height: 100%;
+  }
   .AboutContainer {
     margin: 0px auto;
     width: 95%;
     display: flex;
     flex-direction: column;
     @include desktop {
+      height: 95vh;
       flex-direction: row;
-      padding: 3rem 0rem;
     }
     .ProfileImgContainer {
       width: 100%;
