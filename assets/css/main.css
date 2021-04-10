@@ -681,7 +681,7 @@ footer .SocialLinks .Github:hover {
   }
 }
 
-.ProjectsWrapper .ProjectsContainer .Project .ViewSiteLink {
+.ProjectsWrapper .ProjectsContainer .Project .ViewGitRepoLink {
   display: contents;
 }
 
