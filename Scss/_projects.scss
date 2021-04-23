@@ -1,0 +1,96 @@
+@import '_mixins/responsiveScreenSize';
+@import '_mixins/colors';
+@import '_mixins/typography';
+
+.ProjectsWrapper {
+  background-color: $accentColor;
+  .ProjectsContainer {
+    margin: 0px auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .ProjectsHeader {
+      width: 95%;
+      margin: 0px auto;
+      text-align: center;
+      font-size: $mobileTitleSize;
+      padding: 1rem 0rem;
+      font-weight: 600;
+      @include verticalTablet {
+        font-size: $tabletTitleSize;
+      }
+      @include desktop {
+        font-size: $desktopTitleSize;
+      }
+    }
+    .Project {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      padding: 1.5rem 0rem;
+      @include desktop {
+        width: 50%;
+      }
+      h1 {
+        width: 70%;
+        text-align: center;
+        padding-bottom: 1rem;
+        font-size: $mobileSmallerTitleSize;
+        @include verticalTablet {
+          font-size: $tabletSmallerTitleSize;
+        }
+        @include desktop {
+          font-size: $desktopSmallerTitleSize;
+        }
+      }
+      .ViewGitRepoLink {
+        display: contents;
+      }
+      .DesktopImg {
+        width: 70%;
+        border-radius: 5px;
+        padding: 0.5rem;
+        background-color: $mainColor;
+        cursor: pointer;
+        @include desktop {
+          padding: 1rem;
+        }
+      }
+      .DesktopImg:hover {
+        opacity: 0.3;
+        transition: 0.5s ease;
+      }
+      .MobileImg {
+        width: 17%;
+        position: absolute;
+        top: 28%;
+        left: 74%;
+      }
+      p {
+        font-size: $mobileTextSize;
+        text-align: center;
+        padding: 1rem;
+        width: 75%;
+        @include verticalTablet {
+          font-size: $tabletTextSize;
+        }
+        @include desktop {
+          font-size: $desktopTextSize;
+        }
+      }
+      .ViewPageBtb {
+        padding: 0.2rem 0.5rem;
+        background-color: white;
+        border-radius: 1rem;
+        text-decoration: none;
+        color: $mainColor;
+        display: flex;
+      }
+    }
+  }
+}
