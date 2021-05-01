@@ -330,7 +330,7 @@ footer .SocialLinks .Github:hover {
 
 @media screen and (min-width: 1024px) {
   .AboutWrapper .AboutContainer {
-    height: 100vh;
+    height: 94vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -714,7 +714,7 @@ footer .SocialLinks .Github:hover {
 .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
   width: 17%;
   position: absolute;
-  top: 28%;
+  top: 23%;
   left: 74%;
 }
 
@@ -740,6 +740,7 @@ footer .SocialLinks .Github:hover {
 .ProjectsWrapper .ProjectsContainer .Project .ViewPageBtb {
   padding: 0.2rem 0.5rem;
   background-color: white;
+  border: 1px solid #3f4e4f;
   border-radius: 1rem;
   text-decoration: none;
   color: #3f4e4f;
