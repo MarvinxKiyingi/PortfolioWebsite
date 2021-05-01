@@ -1,8 +1,13 @@
-# Own coded portfolio website
+# Portfolio website
 
+This is a portfolio website meant to be the home for my present and future project that people can interact with.
 <br />
 
-## How to get started
+## Live Page
+
+https://marvinxkiyingi.com
+
+## SCSS
 
 I am using Live Sass Compiler a Vs code extention to complie my scss files.
 
@@ -22,8 +27,8 @@ I am using Live Sass Compiler a Vs code extention to complie my scss files.
 
 ## Project structure
 
-- All Html-files are in the html folder
+- All Html-files are placed in the root file
 - All Js-files are in the js folder
 - All Scss-files are in the scss folder
-- All Css-files are in the css folder
-- All Images are in the images folder
+- All Css-files are in the public folder under assets
+- All Images are in the images folder under assets
