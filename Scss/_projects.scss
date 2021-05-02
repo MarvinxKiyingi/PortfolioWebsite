@@ -84,13 +84,25 @@
         }
       }
       .ViewPageBtb {
-        padding: 0.2rem 0.5rem;
+        padding: 0.4rem 0.5rem;
         background-color: white;
         border: 1px solid $mainColor;
         border-radius: 1rem;
         text-decoration: none;
         color: $mainColor;
         display: flex;
+        @include verticalTablet {
+          padding: 0.3rem 2rem;
+        }
+      }
+      .ViewPageBtb:hover {
+        color: white;
+        background-color: $mainColor;
+      }
+      .ViewPageBtb:active {
+        transform: translateY(3px);
+        color: white;
+        background-color: $mainColor;
       }
     }
   }

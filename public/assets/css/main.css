@@ -738,7 +738,7 @@ footer .SocialLinks .Github:hover {
 }
 
 .ProjectsWrapper .ProjectsContainer .Project .ViewPageBtb {
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 0.5rem;
   background-color: white;
   border: 1px solid #3f4e4f;
   border-radius: 1rem;
@@ -747,6 +747,24 @@ footer .SocialLinks .Github:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .ProjectsWrapper .ProjectsContainer .Project .ViewPageBtb {
+    padding: 0.3rem 2rem;
+  }
+}
+
+.ProjectsWrapper .ProjectsContainer .Project .ViewPageBtb:hover {
+  color: white;
+  background-color: #3f4e4f;
+}
+
+.ProjectsWrapper .ProjectsContainer .Project .ViewPageBtb:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  color: white;
+  background-color: #3f4e4f;
 }
 
 *,
