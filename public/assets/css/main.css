@@ -266,12 +266,6 @@ footer .SocialLinks {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  footer .SocialLinks {
-    font-size: 4.5rem;
-  }
-}
-
 footer .SocialLinks span {
   color: #c4c4c4;
   padding: 5px;
