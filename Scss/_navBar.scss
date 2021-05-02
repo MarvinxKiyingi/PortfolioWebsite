@@ -64,16 +64,18 @@ header {
       text-align: center;
       top: 3rem;
       right: 0;
-      margin-right: 0.5rem;
+      margin-right: 0.6rem;
       justify-content: space-between;
-      width: 7rem;
-      height: 7rem;
+      width: 10rem;
+      height: 10rem;
       background-color: white;
-      padding: 0.5rem;
+      padding: 1rem;
+      font-size: 1.2rem;
       @include verticalTablet {
-        width: 9rem;
-        height: 9rem;
-        font-size: 1.3rem;
+        width: 20rem;
+        height: 20rem;
+        font-size: 2rem;
+        margin-right: 1.2rem;
       }
       li {
         width: 100%;
