@@ -105,9 +105,9 @@ header nav .Menu.show {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  top: 3rem;
+  top: 2.9rem;
   right: 0;
-  margin-right: 0.6rem;
+  margin-right: 0.4rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -116,6 +116,7 @@ header nav .Menu.show {
   background-color: white;
   padding: 1rem;
   font-size: 1.2rem;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -123,7 +124,7 @@ header nav .Menu.show {
     width: 20rem;
     height: 20rem;
     font-size: 2rem;
-    margin-right: 1.2rem;
+    margin-right: 1rem;
   }
 }
 
