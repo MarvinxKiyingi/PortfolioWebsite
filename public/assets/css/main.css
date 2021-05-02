@@ -105,23 +105,26 @@ header nav .Menu.show {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  top: 3rem;
+  top: 2.9rem;
   right: 0;
-  margin-right: 0.5rem;
+  margin-right: 0.4rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 7rem;
-  height: 7rem;
+  width: 10rem;
+  height: 10rem;
   background-color: white;
-  padding: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
   header nav .Menu.show {
-    width: 9rem;
-    height: 9rem;
-    font-size: 1.3rem;
+    width: 20rem;
+    height: 20rem;
+    font-size: 2rem;
+    margin-right: 1rem;
   }
 }
 
@@ -235,7 +238,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1.2rem;
 }
 
 footer h4 {
@@ -244,26 +246,23 @@ footer h4 {
 }
 
 footer .SocialLinks {
-  font-size: 2rem;
-  width: 15rem;
+  font-size: 3rem;
+  width: 90%;
+  height: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   footer .SocialLinks {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  footer .SocialLinks {
-    font-size: 2.7rem;
-    width: 25rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -714,8 +713,17 @@ footer .SocialLinks .Github:hover {
 .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
   width: 17%;
   position: absolute;
-  top: 23%;
+  top: 24%;
   left: 74%;
+}
+
+@media screen and (min-width: 768px) {
+  .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
+    width: 17%;
+    position: absolute;
+    top: 22%;
+    left: 74%;
+  }
 }
 
 .ProjectsWrapper .ProjectsContainer .Project p {

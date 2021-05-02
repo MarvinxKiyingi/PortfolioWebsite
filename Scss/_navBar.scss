@@ -62,18 +62,21 @@ header {
       display: flex;
       flex-direction: column;
       text-align: center;
-      top: 3rem;
+      top: 2.9rem;
       right: 0;
-      margin-right: 0.5rem;
+      margin-right: 0.4rem;
       justify-content: space-between;
-      width: 7rem;
-      height: 7rem;
+      width: 10rem;
+      height: 10rem;
       background-color: white;
-      padding: 0.5rem;
+      padding: 1rem;
+      font-size: 1.2rem;
+      border-radius: 5px;
       @include verticalTablet {
-        width: 9rem;
-        height: 9rem;
-        font-size: 1.3rem;
+        width: 20rem;
+        height: 20rem;
+        font-size: 2rem;
+        margin-right: 1rem;
       }
       li {
         width: 100%;
