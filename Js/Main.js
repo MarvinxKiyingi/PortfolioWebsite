@@ -15,8 +15,10 @@ function toggleMenu() {
 }
 
 function unToggleMenu() {
-  $(this).removeClass('animate');
-  $(this).removeClass('show');
+  const menuItemClicked = $('.MenuItem');
+
+  $(menuItemClicked).removeClass('animate');
+  $(menuItemClicked).removeClass('show');
 }
 // function renderPojects() {
 //   // Creating a constructor to make the structure clear and the porocess easier
