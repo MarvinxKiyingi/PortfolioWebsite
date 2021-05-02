@@ -1,10 +1,23 @@
 $(function () {
   const hamburger = $('.BurgerMenuBtn');
+  const menuItem = $('.MenuItem');
 
   hamburger.on('click', toggleMenu);
+  menuItem.on('click', toggleMenu);
   // renderPojects();
 });
+function toggleMenu() {
+  const hamburgerButton = $('.BurgerMenuBtn');
+  const navLinks = $('.Menu');
 
+  $(hamburgerButton).toggleClass('animate');
+  $(navLinks).toggleClass('show');
+}
+
+function unToggleMenu() {
+  $(this).removeClass('animate');
+  $(this).removeClass('show');
+}
 // function renderPojects() {
 //   // Creating a constructor to make the structure clear and the porocess easier
 //   class Project {
@@ -67,9 +80,3 @@ $(function () {
 //   $('<a>').addClass('ViewBtb').attr('href', project.GitHubLink).text('GitHub Repo').appendTo(projectContainer);
 // });
 // }
-
-function toggleMenu() {
-  const navLinks = $('.Menu');
-  $(this).toggleClass('animate');
-  $(navLinks).toggleClass('show');
-}
