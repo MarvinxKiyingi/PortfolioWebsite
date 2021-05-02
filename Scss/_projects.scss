@@ -68,8 +68,14 @@
       .MobileImg {
         width: 17%;
         position: absolute;
-        top: 23%;
+        top: 24%;
         left: 74%;
+        @include verticalTablet {
+          width: 17%;
+          position: absolute;
+          top: 22%;
+          left: 74%;
+        }
       }
       p {
         font-size: $mobileTextSize;

@@ -714,8 +714,17 @@ footer .SocialLinks .Github:hover {
 .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
   width: 17%;
   position: absolute;
-  top: 23%;
+  top: 24%;
   left: 74%;
+}
+
+@media screen and (min-width: 768px) {
+  .ProjectsWrapper .ProjectsContainer .Project .MobileImg {
+    width: 17%;
+    position: absolute;
+    top: 22%;
+    left: 74%;
+  }
 }
 
 .ProjectsWrapper .ProjectsContainer .Project p {
